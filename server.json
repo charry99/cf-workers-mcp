@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.charry99/cf-workers-mcp",
+  "title": "Cloudflare Workers MCP Server",
+  "description": "Inspect Cloudflare Workers from Claude, Cursor and other MCP clients — read-only.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/charry99/cf-workers-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "cloudflare-workers-mcp-server",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "CF_API_TOKEN",
+          "description": "Cloudflare API token with Workers read permission. Required for account tools; the status-check tool works without it.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "CF_ACCOUNT_ID",
+          "description": "Cloudflare account ID that owns the Workers to inspect.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

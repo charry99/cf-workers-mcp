@@ -1,0 +1,11 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["charry99"],
+  "name": "Cloudflare Workers MCP Server",
+  "description": "Inspect Cloudflare Workers from Claude, Cursor and other MCP clients — read-only.",
+  "category": "developer-tools",
+  "install": {
+    "command": "node",
+    "args": ["dist/server.js"]
+  }
+}
