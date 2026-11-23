@@ -1,0 +1,1 @@
+{"_fixture":"FIXTURE — hand-written to the documented Cloudflare API v4 error envelope shape (success=false with errors[]). Used to check validation/error handling. Not a captured live response.","errors":[{"code":10000,"message":"Authentication error"}],"messages":[],"result":null,"success":false}
